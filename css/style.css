@@ -231,3 +231,62 @@ main {
         margin: 10vh auto;
     }
 }
+
+/* ***************************botões */
+
+.container__btn-cor{
+    display: flex;
+    z-index: 2;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top:100%;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 100px;
+    width:50%;
+}
+.titulo-cor{
+    font-size: 2em;
+    color: white;
+
+}
+.btn-cor{
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1/1;
+    transition: transform 0.3s;
+}
+
+.btn-cor:hover{
+    transform: scale(180%);
+
+    transition: transform 0.3s;
+}
+.btn-cor:active{
+    transform: scale(90%);
+}
+.btn-ativo{
+    transform: scale(180%);
+    border-width: 2px;
+}
+
+[data-cor="azul"]{
+    background-color: rgb(70, 109, 182);
+}
+[data-cor="amarelo"]{
+    background-color:rgb(255, 255, 0);
+}
+[data-cor="branco"]{
+    background-color: rgb(255, 255, 255);
+}
+[data-cor="preto"]{
+    background-color: rgb(44, 44, 44);
+}
+[data-cor="rosa"]{
+    background-color: #e587ad;
+}
+[data-cor="vermelho"]{
+    background-color: rgb(240, 0, 0);
+}
